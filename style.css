@@ -210,3 +210,21 @@ about-text p {
     transform: translateX(-50%);
   }
 }
+
+/*Barra lampeggiante*/
+
+.cursor {
+  display: inline-block;
+  margin-left: 5px;
+  color: #A78BFA;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
