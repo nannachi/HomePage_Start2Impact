@@ -363,3 +363,77 @@ h1:hover {
   width: 40px;
   height: 40px;
 }
+
+.linkedin-icon {
+  width: 34px;
+  height: 34px;
+}
+
+/*FOOTER*/
+/* FOOTER */
+.site-footer {
+  margin-top: 100px;
+  padding: 60px 20px;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+/* CONTAINER */
+.footer-container {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+/* COLONNE */
+.footer-col h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.footer-col h4 {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: #6B6B6B;
+}
+
+.footer-col p {
+  color: #6B6B6B;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* LINK */
+.footer-col a {
+  display: block;
+  text-decoration: none;
+  color: #2E2E2E;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+/* HOVER */
+.footer-col a:hover {
+  color: #A78BFA;
+  transform: translateX(4px);
+}
+
+/* BOTTOM */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.85rem;
+  color: #9A9A9A;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
