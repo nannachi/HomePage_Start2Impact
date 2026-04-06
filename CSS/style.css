@@ -1,4 +1,3 @@
-
 /* RESET */
 * {
   margin: 0;
@@ -24,7 +23,7 @@ body {
 
 /* TITOLI */
 h1 {
-  font-size: 5rem;
+ font-size: clamp(2.5rem, 6vw, 5rem);
   font-weight: 600;
   line-height: 1.15;
   letter-spacing: -1px;
@@ -77,16 +76,16 @@ h1:hover {
 .about {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 50px;
-
-  max-width: 900px;
-  margin: 100px auto;
+  justify-content: center;
+  gap: 80px;
+  max-width: 1000px;
+  margin: 120px auto;
   padding: 0 20px;
 }
 
+/* TESTO ABOUT */
 .about-text {
-  flex: 1;
+  flex: 1.2;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -94,40 +93,32 @@ h1:hover {
 }
 
 .about-text h2 {
-  font-size: 2.4rem;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 2.6rem;
   font-weight: 600;
-  margin-bottom: 16px;
-  position: relative;
+  letter-spacing: -0.5px;
+  margin-bottom: 12px;
 }
 
-.about-text h2::after {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: #A78BFA;
-  margin-top: 8px;
-  border-radius: 2px;
-}
 
 .about-text p {
+  font-family: 'Inter', sans-serif;
   font-size: 1.1rem;
   line-height: 1.8;
   color: #4A4A4A;
-
   max-width: 520px;
-  margin-top: 10px;
-
-  padding: 20px;
+  margin-top: 12px;
+  padding: 0px;
   border-radius: 16px;
-
-  background: rgba(255,255,255,0.6);
-  backdrop-filter: blur(8px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  background: transparent;
+  backdrop-filter: blur(6px);
+  box-shadow: none;
+  letter-spacing: 0.2px;
 }
 
+/* IMMAGINE ABOUT */
 .about-image {
-  flex: 1;
+  flex: 0.8;
   display: flex;
   justify-content: center;
 }
@@ -151,7 +142,7 @@ h1:hover {
 /* DIVIDER */
 .divider-bar {
   width: 100%;
-  height: 140px;
+  height: 80px;
   background-color: #000;
   overflow: hidden;
   display: flex;
@@ -231,12 +222,10 @@ h1:hover {
   z-index: 2000;
 }
 
-/* HIDE CHECKBOX */
 #menu-toggle {
   display: none;
 }
 
-/* HAMBURGER */
 .hamburger {
   width: 30px;
   height: 22px;
@@ -244,11 +233,6 @@ h1:hover {
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
-}
-
-/* HOVER HAMBURGER */
-.hamburger:hover span {
-  background: #A78BFA;
 }
 
 .hamburger span {
@@ -259,31 +243,31 @@ h1:hover {
   border-radius: 2px;
 }
 
-/* DROPDOWN */
+.hamburger:hover span {
+  background: #A78BFA;
+}
+
 /* DROPDOWN */
 .dropdown {
-  display: none;
+display: flex;
   flex-direction: column;
   margin-top: 12px;
-
   background: rgba(255,255,255,0.8);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 10px;
-
   opacity: 0;
   transform: translateY(-10px);
+  pointer-events: none;
   transition: all 0.3s ease;
 }
 
-/* SHOW MENU */
 #menu-toggle:checked ~ .dropdown {
-  display: flex;
   opacity: 1;
   transform: translateY(0);
+  pointer-events: auto;
 }
 
-/* LINKS */
 .dropdown a {
   text-decoration: none;
   color: #2E2E2E;
@@ -292,34 +276,16 @@ h1:hover {
   transition: all 0.2s ease;
 }
 
-/* LINK HOVER */
 .dropdown a:hover {
   background: rgba(0,0,0,0.05);
   transform: translateX(4px);
 }
 
-/* DIVIDER MENU */
 .dropdown hr {
   border: none;
   height: 1px;
   background: rgba(0,0,0,0.1);
   margin: 8px 0;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .about {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-text {
-    text-align: center;
-  }
-
-  .about-text p {
-    max-width: 100%;
-  }
 }
 
 /* ICONE TOP RIGHT */
@@ -334,7 +300,6 @@ h1:hover {
   gap: 12px;
 }
 
-/* contenitore cliccabile */
 .top-right a {
   display: flex;
   align-items: center;
@@ -343,22 +308,18 @@ h1:hover {
   height: 30px;
 }
 
-/* immagine */
 .top-right img {
   width: 100%;
   height: 100%;
   object-fit: contain;
-
   transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
-/* hover generale */
 .top-right a:hover img {
   transform: scale(1.15);
   opacity: 0.85;
 }
 
-/* Instagram più grande */
 .instagram-icon img {
   width: 40px;
   height: 40px;
@@ -369,7 +330,6 @@ h1:hover {
   height: 34px;
 }
 
-/*FOOTER*/
 /* FOOTER */
 .site-footer {
   margin-top: 100px;
@@ -379,7 +339,6 @@ h1:hover {
   border-top: 1px solid rgba(0,0,0,0.08);
 }
 
-/* CONTAINER */
 .footer-container {
   max-width: 1000px;
   margin: auto;
@@ -388,7 +347,6 @@ h1:hover {
   gap: 50px;
 }
 
-/* COLONNE */
 .footer-col h3 {
   font-size: 1.3rem;
   margin-bottom: 12px;
@@ -406,7 +364,6 @@ h1:hover {
   font-size: 0.95rem;
 }
 
-/* LINK */
 .footer-col a {
   display: block;
   text-decoration: none;
@@ -416,13 +373,11 @@ h1:hover {
   transition: color 0.2s ease, transform 0.2s ease;
 }
 
-/* HOVER */
 .footer-col a:hover {
   color: #A78BFA;
   transform: translateX(4px);
 }
 
-/* BOTTOM */
 .footer-bottom {
   text-align: center;
   margin-top: 40px;
@@ -432,6 +387,19 @@ h1:hover {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-text p {
+    max-width: 100%;
+  }
+
   .footer-container {
     grid-template-columns: 1fr;
     text-align: center;
