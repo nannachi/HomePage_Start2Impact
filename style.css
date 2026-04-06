@@ -73,7 +73,7 @@ h1:hover {
 }
 
 /* ABOUT SECTION */
-/* ABOUT SECTION */
+
 .about {
   display: flex;
   align-items: center;
@@ -211,7 +211,7 @@ about-text p {
   }
 }
 
-/*Barra lampeggiante*/
+/*BARRA DOPO TYPING*/
 
 .cursor {
   display: inline-block;
@@ -228,7 +228,7 @@ about-text p {
     opacity: 0;
   }
 }
-
+/*EFFETTO TYPING*/
 .typing {
   display: inline-block;
   overflow: hidden;
@@ -237,7 +237,6 @@ about-text p {
   animation: typing 2s steps(6, end) forwards;
 }
 
-/* 6 = numero lettere di "Repeat" */
 @keyframes typing {
   from {
     width: 0;
