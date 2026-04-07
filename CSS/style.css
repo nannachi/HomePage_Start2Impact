@@ -349,11 +349,11 @@ h1:hover {
    FOOTER
 ========================= */
 .site-footer {
-  margin-top: 100px;
-  padding: 60px 20px;
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(10px);
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  margin-top: 120px;
+  padding: 70px 20px;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .footer-container {
@@ -365,37 +365,59 @@ h1:hover {
 }
 
 .footer-col h3 {
-  font-size: 1.3rem;
-  margin-bottom: 12px;
+  font-size: 1.4rem;
+  margin-bottom: 14px;
+  font-family: "Bodoni Moda", serif;
 }
+
 .footer-col h4 {
-  font-size: 1rem;
-  margin-bottom: 12px;
-  color: #6B6B6B;
-}
-.footer-col p {
-  color: #6B6B6B;
-  line-height: 1.6;
   font-size: 0.95rem;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #6B6B6B;
 }
+
+.footer-col p {
+  color: #4A4A4A;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  max-width: 260px;
+}
+
 .footer-col a {
   display: block;
   text-decoration: none;
   color: #2E2E2E;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   font-size: 0.95rem;
-  transition: color 0.2s ease, transform 0.2s ease;
+  position: relative;
+  transition: all 0.25s ease;
 }
 .footer-col a:hover {
   color: #A78BFA;
-  transform: translateX(4px);
+  transform: translateX(6px);
+}
+.footer-col a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 1px;
+  background: #A78BFA;
+  transition: width 0.3s ease;
+}
+.footer-col a:hover::after {
+  width: 100%;
 }
 
 .footer-bottom {
   text-align: center;
-  margin-top: 40px;
-  font-size: 0.85rem;
+  margin-top: 50px;
+  font-size: 0.8rem;
   color: #9A9A9A;
+  letter-spacing: 0.5px;
 }
 
 /* =========================
@@ -469,7 +491,6 @@ h1:hover {
   border-radius: 20px;
   padding: 28px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  height: 100%;
 }
 .cv-block + .cv-block {
   margin-top: 1.5rem;
@@ -519,6 +540,15 @@ h1:hover {
 }
 
 /* =========================
+   CV SIDEBAR
+========================= */
+.cv-page .col-lg-4 {
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+}
+
+/* =========================
    RESPONSIVE
 ========================= */
 @media (max-width: 768px) {
@@ -541,6 +571,10 @@ h1:hover {
   }
   .cv-block {
     padding: 22px;
+  }
+  .cv-page .col-lg-4 {
+    position: static;
+    top: auto;
   }
 }
 
