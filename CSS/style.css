@@ -423,9 +423,6 @@ h1:hover {
 /* =========================
    CV PAGE
 ========================= */
-/* =========================
-   CV PAGE
-========================= */
 .cv-page {
   font-family: "Inter", sans-serif;
   background: linear-gradient(180deg, #F5F6F8, #E6E8EC);
@@ -471,6 +468,7 @@ h1:hover {
 .cv-hero {
   text-align: center;
   margin-bottom: 4rem;
+  margin-top: 150px;
 }
 
 .cv-title {
@@ -631,6 +629,29 @@ h1:hover {
 }
 .page-intro .accent {
   color: #A78BFA;
+}
+
+/* =========================
+   INTRO DIVIDER
+*/
+.intro-divider {
+  height: 2px;
+  width: 0;
+  margin: 30px auto 50px;
+  background: #A78BFA;
+  border-radius: 999px;
+  opacity: 0.7;
+  animation: growLine 1.2s ease forwards;
+  animation-delay: 1s;
+}
+
+@keyframes growLine {
+  from {
+    width: 0;
+  }
+  to {
+    width: 1000px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
