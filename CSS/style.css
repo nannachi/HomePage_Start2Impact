@@ -601,4 +601,36 @@ h1:hover {
   transform: translateY(-2px);
 }
 
+/* =========================
+   PAGE INTRO (CV, CONTATTI, ecc.)
+========================= */
+.page-intro {
+  text-align: center;
+  margin: 200px 0 60px;
+}
+.page-intro h1 {
+  font-size: clamp(2.4rem, 5vw, 3.2rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -1px;
+}
+.page-intro .line {
+  display: block;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: revealText 1.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.page-intro .line:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.page-intro .line:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.page-intro .line:nth-child(3) {
+  animation-delay: 0.9s;
+}
+.page-intro .accent {
+  color: #A78BFA;
+}
+
 /*# sourceMappingURL=style.css.map */
