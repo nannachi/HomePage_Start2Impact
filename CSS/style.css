@@ -521,6 +521,8 @@ display: flex;
 
 .cv-item + .cv-item {
   margin-top: 1.75rem;
+  border-top: 2rem;
+  padding-top:1.5rem;
 }
 
 .cv-role {
