@@ -752,3 +752,280 @@ h1 {
     width: 1000px; 
   }
 }
+
+/* =========================
+   CONTACT PAGE
+========================= */
+.contact-page {
+  font-family: $font-base;
+  background: linear-gradient(180deg, $bg-start, $bg-end);
+  color: $text-main;
+}
+
+.contact-hero {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.contact-title {
+  font-family: $font-display;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  margin-bottom: 0.75rem;
+}
+
+.contact-subtitle {
+  font-size: 1rem;
+  color: $text-muted;
+  letter-spacing: 0.3px;
+}
+
+.contact-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-block {
+  background: $cv-card-bg;
+  backdrop-filter: blur(10px);
+  border: 1px solid $cv-card-border;
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: $shadow-cv;
+}
+
+.contact-section-title {
+  font-family: $font-display;
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: $text-main;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 42px;
+    height: 2px;
+    margin-top: 8px;
+    background: $accent;
+    border-radius: 999px;
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: $text-main;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 0.75);
+    font-family: $font-base;
+    font-size: 1rem;
+    color: $text-main;
+    outline: none;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  input:focus,
+  textarea:focus {
+    border-color: $accent;
+    box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.15);
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 160px;
+  }
+}
+
+.contact-button-solid {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: 8px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  border: 1px solid $accent;
+  background: $accent;
+  color: $white;
+  font-weight: 500;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(167, 139, 250, 0.25);
+  }
+}
+
+/*CONTATTI*/
+
+.contact-page {
+  font-family: $font-base;
+  background: linear-gradient(180deg, $bg-start, $bg-end);
+  color: $text-main;
+}
+
+.contact-hero {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.contact-title {
+  font-family: $font-display;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  margin-bottom: 0.75rem;
+}
+
+.contact-subtitle {
+  font-size: 1rem;
+  color: $text-muted;
+  letter-spacing: 0.3px;
+}
+
+.contact-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-block {
+  background: $cv-card-bg;
+  backdrop-filter: blur(10px);
+  border: 1px solid $cv-card-border;
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: $shadow-cv;
+}
+
+.contact-section-title {
+  font-family: $font-display;
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: $text-main;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 42px;
+    height: 2px;
+    margin-top: 8px;
+    background: $accent;
+    border-radius: 999px;
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: $text-muted;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 0.75);
+    font-family: $font-base;
+    font-size: 1rem;
+    color: $text-main;
+    outline: none;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: #aaa;
+    opacity: 0.7;
+  }
+
+  input:focus,
+  textarea:focus {
+    border-color: $accent;
+    box-shadow: 0 0 0 4px rgba(167, 139, 250, 0.15);
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 160px;
+  }
+}
+
+.contact-button-solid {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: 8px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  border: 1px solid $accent;
+  background: $accent;
+  color: $white;
+  font-weight: 500;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+
+  &:hover {
+    color: $white;
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(167, 139, 250, 0.3);
+  }
+}
+
+.form-note {
+  font-size: 0.85rem;
+  color: $text-muted;
+  margin-top: 10px;
+}
+
+/* RESPONSIVE CONTACT */
+@media (max-width: 768px) {
+  .contact-block {
+    padding: 24px;
+  }
+
+  .contact-hero {
+    margin-bottom: 40px;
+  }
+
+  .contact-button-solid {
+    width: 100%;
+    text-align: center;
+  }
+}
