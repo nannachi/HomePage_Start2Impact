@@ -237,6 +237,15 @@ h1:hover {
   line-height: 1.2;
 }
 
+@media (max-width: 480px) {
+  .site-header {
+    padding: 14px 10px;
+  }
+  .site-header h1 {
+    font-size: 0.9rem;
+    letter-spacing: 1.2px;
+  }
+}
 /* =========================
    MENU
 ========================= */
