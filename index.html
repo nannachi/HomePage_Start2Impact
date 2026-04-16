@@ -21,28 +21,15 @@
 <body>
 
 <!-- MENU -->
-<div class="menu-container">
-  <input type="checkbox" id="menu-toggle" />
-
-  <label for="menu-toggle" class="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </label>
-
-  <div class="dropdown">
+<nav class="nav">
+  <div class="nav-links">
     <a href="index.html">Home</a>
     <a href="#chi-sono">Chi sono</a>
-
-    <hr>
-
-    <a href="PAGES/CV.html">CV</a>
-    <a href="PAGES/portfolio.html">Portfolio</a>
-    <a href="PAGES/contatti.html">Contatti</a>
-
-    <hr>
+    <a href="pages/CV.html">CV</a>
+    <a href="pages/portfolio.html">Portfolio</a>
+    <a href="pages/contatti.html">Contatti</a>
   </div>
-</div>
+</nav>
 
 <!--Immagini-->
 <div class="top-right">
@@ -63,8 +50,11 @@
 
 <!-- HEADER -->
 <header class="site-header">
-  <h1>Chiara Ribaudo</h1>
+  <h1>
+    <a href="index.html">Chiara Ribaudo</a>
+  </h1>
 </header>
+
 <main>
 <!-- Overlay iniziale -->
 <div class="overlay"></div>
@@ -110,6 +100,28 @@
     </div>
   </div>
 </section>
+
+<!--Progetti-->
+<section class="home-projects">
+  <h2>Selected work</h2>
+
+  <div class="projects-preview">
+
+    <div class="project">
+      <img src="assets/img/ProgettoGreenHeart.png" alt="GreenHeart project">
+      <p>GreenHeart Landing Page</p>
+    </div>
+
+    <div class="project">
+      <img src="assets/img/portfolio1.png" alt="Portfolio project">
+      <p>Portfolio Website</p>
+    </div>
+
+  </div>
+
+  <a href="PAGES/portfolio.html">View all projects →</a>
+</section>
+
 </main>
 
 <!-- FOOTER -->
