@@ -399,7 +399,8 @@ h1 {
   backdrop-filter: blur(10px);
   z-index: 1000;
 }
-.site-header h1 {
+.site-header h1,
+.site-header .site-title {
   margin: 0;
   font-size: clamp(0.95rem, 3.2vw, 1.1rem);
   font-weight: 500;
